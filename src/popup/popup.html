@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Attic</title>
+    <link rel="stylesheet" href="../ui.css" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <input id="search" type="search" placeholder="Search the archive" autofocus />
+      <label id="keep" class="keep">
+        <input id="keep-toggle" type="checkbox" />
+        <span id="keep-label">Keep this tab open</span>
+      </label>
+    </header>
+
+    <main>
+      <ul id="list"></ul>
+      <p id="empty" class="empty muted" hidden></p>
+    </main>
+
+    <footer>
+      <span id="status" class="muted"></span>
+      <span class="actions">
+        <button id="sweep" class="link" type="button">Archive idle tabs now</button>
+        <button id="settings" class="link" type="button">Settings</button>
+      </span>
+    </footer>
+
+    <script src="../lib/policy.js"></script>
+    <script src="../lib/store.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

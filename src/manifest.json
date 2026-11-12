@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Attic — Auto-Archive Old Tabs",
+  "short_name": "Attic",
+  "version": "0.1.0",
+  "description": "Arc-style auto-archive for Zen and Firefox: closes tabs you haven't used in a while and keeps them in a searchable archive.",
+  "homepage_url": "https://github.com/davideimola/attic",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "attic@davideimola",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "permissions": ["tabs", "alarms", "storage", "sessions", "cookies"],
+  "background": {
+    "scripts": ["lib/policy.js", "lib/store.js", "background.js"]
+  },
+  "action": {
+    "default_title": "Attic",
+    "default_popup": "popup/popup.html",
+    "default_icon": "icons/toolbar-dark.svg",
+    "theme_icons": [
+      { "light": "icons/toolbar-light.svg", "dark": "icons/toolbar-dark.svg", "size": 16 },
+      { "light": "icons/toolbar-light.svg", "dark": "icons/toolbar-dark.svg", "size": 32 }
+    ]
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": false
+  },
+  "icons": {
+    "48": "icons/attic.svg",
+    "96": "icons/attic.svg"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "attic",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Arc-style auto-archive for Zen and Firefox tabs.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test",
+    "lint": "web-ext lint --source-dir src",
+    "build": "web-ext build --source-dir src --artifacts-dir dist --overwrite-dest",
+    "start": "web-ext run --source-dir src",
+    "start:zen": "web-ext run --source-dir src --firefox /Applications/Zen.app/Contents/MacOS/zen"
+  },
+  "devDependencies": {
+    "web-ext": "^8.0.0"
+  }
+}

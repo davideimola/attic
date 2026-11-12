@@ -1,0 +1,25 @@
+body { padding: 12px 4px; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 520px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.row.check { justify-content: flex-start; gap: 8px; }
+.row.check input { accent-color: var(--accent); margin: 0; }
+
+.stack { display: flex; flex-direction: column; gap: 6px; }
+textarea { width: 100%; resize: vertical; }
+
+.note { margin: 0; font-size: 12px; }
+.footer { padding-top: 4px; }
+
+form.off .depends { opacity: 0.5; }
