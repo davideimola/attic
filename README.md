@@ -17,7 +17,7 @@ Attic closes the tabs you haven't looked at in a while and keeps them in a searc
 npm install
 npm test          # unit tests for the archive policy
 npm run lint      # web-ext lint
-npm run start:zen # launch Zen with the extension loaded (macOS path)
+npm run start:zen # launch Zen with the extension, in a dev profile kept in .zen-dev-profile/
 npm run build     # zip for addons.mozilla.org in dist/
 ```
 

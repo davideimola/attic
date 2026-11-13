@@ -9,7 +9,7 @@
     "lint": "web-ext lint --source-dir src",
     "build": "web-ext build --source-dir src --artifacts-dir dist --overwrite-dest",
     "start": "web-ext run --source-dir src",
-    "start:zen": "web-ext run --source-dir src --firefox /Applications/Zen.app/Contents/MacOS/zen"
+    "start:zen": "web-ext run --source-dir src --firefox /Applications/Zen.app/Contents/MacOS/zen --firefox-profile .zen-dev-profile --profile-create-if-missing --keep-profile-changes"
   },
   "devDependencies": {
     "web-ext": "^8.0.0"

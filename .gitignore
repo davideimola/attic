@@ -2,3 +2,4 @@ node_modules/
 dist/
 .web-extension-id
 .DS_Store
+.zen-dev-profile/
