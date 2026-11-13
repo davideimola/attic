@@ -1,0 +1,20 @@
+{
+  "categories": {
+    "firefox": ["tabs"]
+  },
+  "summary": {
+    "en-US": "Arc-style auto-archive for Zen and Firefox: automatically closes tabs you haven't used in a while and keeps them in a searchable archive."
+  },
+  "description": {
+    "en-US": "Miss Arc's auto-archive in Zen or Firefox? Attic closes the tabs you haven't looked at in a while and keeps them in a searchable archive, so your sidebar stays clean without losing anything.\n\n<b>Features</b>\n• Auto close idle tabs after 1 hour, 12 hours, 1 day, 7 days or 30 days\n• Searchable archive in the toolbar popup: type a few words, press Enter, the tab is back\n• Tabs reopen in the container they came from\n• \"Keep this tab open\" for single tabs, plus a list of sites that are never closed\n• Pinned tabs, the active tab and tabs playing audio are never closed\n• Private windows are left alone and never stored\n\n<b>Private by design</b>\nEverything stays in the extension's local storage. No network requests, no data collection, no account.\n\nOpen source (MIT): https://github.com/davideimola/attic"
+  },
+  "homepage": {
+    "en-US": "https://github.com/davideimola/attic"
+  },
+  "support_url": {
+    "en-US": "https://github.com/davideimola/attic/issues"
+  },
+  "version": {
+    "license": "MIT"
+  }
+}
