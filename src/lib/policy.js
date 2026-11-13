@@ -63,7 +63,7 @@
     const s = { ...DEFAULT_SETTINGS, ...(raw || {}) };
     return {
       enabled: Boolean(s.enabled),
-      thresholdHours: Math.max(0.25, toNumber(s.thresholdHours, DEFAULT_SETTINGS.thresholdHours)),
+      thresholdHours: Math.max(1 / 60, toNumber(s.thresholdHours, DEFAULT_SETTINGS.thresholdHours)),
       retentionDays: Math.max(0, toNumber(s.retentionDays, DEFAULT_SETTINGS.retentionDays)),
       archiveLimit: Math.max(1, Math.floor(toNumber(s.archiveLimit, DEFAULT_SETTINGS.archiveLimit))),
       keepDomains: (Array.isArray(s.keepDomains) ? s.keepDomains : [])
